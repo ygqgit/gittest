@@ -1,0 +1,229 @@
+body{
+    background: #080c25;
+}
+@keyframes mymove
+{
+    from {left:100vw;}
+    to {left:0;}
+}
+
+@-webkit-keyframes mymove
+{
+    from {left:100vw;}
+    to {left:0;}
+}
+@-moz-keyframes mymove
+{
+    from {left:100vw;}
+    to {left:0;}
+}
+@-o-keyframes mymove
+{
+    from {left:100vw;}
+    to {left:0;}
+}
+
+/*导航标题栏*/
+.nav{
+    /*height:calc(100vh/1080*143);*/
+    height:100px;
+    background: url("../images/bg-nav.png")  no-repeat 0 center;
+    background-size:contain;
+}
+.main{
+    padding:0 20px;
+    position:absolute;
+    left:100vw;
+    top:100px;
+}
+.loadShoeSection{
+    left:0;
+}
+.showSection{
+    animation:mymove 0.5s 1;
+    -webkit-animation:mymove 0.5s 1 forwards;
+    -moz-animation:mymove 0.5s 1 forwards;
+    -o-animation:mymove 0.5s 1 forwards;
+}
+.produce{
+    margin-bottom: calc(100vh/1080*30);
+}
+.nav-l{
+    width: 6rem;
+    padding:10px 0 5px 40px;
+}
+.nav-r{
+    width: 6rem;
+    padding:10px 40px 5px 0;
+}
+.nav-m{
+    width: 7.2rem;
+}
+.nav-m #title1{
+   width:342px;
+    height: 55px;
+    margin-top:10px;
+}
+.nav #tab-list li{
+    font-size: 0.14rem;
+    color: aqua;
+    margin-right: 0.8rem;
+    cursor: pointer;
+}
+.nav #tab-list li{
+    display: block;
+    padding:8px 16px;
+}
+.nav #tab-list .active{
+    border: 1px solid #1c7099;
+    border-radius:5px;
+    color:#33ccff;
+}
+.nav #tab-list .border{
+    border: 1px solid #485471;
+    border-radius: 5px;
+    color: #485471;
+}
+.nav #time{float: right;line-height: 50px}
+.nav #time p{
+    font-size: 0.14rem;
+    color: #33ccff;
+    font-weight:bold;
+    float: left;
+    margin-right: 0.2rem;
+}
+/*全省主体数量*/
+.produce-hostnumber{
+    width:5.6rem;
+    height:calc(100vh/1080*502);
+    background-color: rgba(20,55,95,0.2);
+}
+.data-title{
+    color:white;
+    line-height:30px;
+    font-size:16px;
+    text-align: center;
+}
+.data-box{
+    box-sizing:border-box;
+    padding:10px 0 30px 0;
+    width:100%;
+    height:100%;
+}
+
+/*地图*/
+.produce-map{
+    width:7.2rem;
+    height:calc(502*100vh/1080);
+    box-sizing: border-box;
+    border:1px solid rgba(24,48,94,0.62);
+}
+/*许可证办理*/
+.produce-certnumber{
+    width:5.6rem;
+    height:calc(100vh/1080*502);
+    background-color: rgba(20,55,95,0.2);
+}
+/*日常监管力度，企业情况，抽检，来源*/
+.check-dailyno,.check-dailycompany,.check-dailyinspection,.check-origion{
+    width:4.55rem;
+    height:calc(100vh/1080*374);
+}
+
+/*全身生产许可证办理情况*/
+.data-title1{
+    width: 100%;
+    height: 30px;
+    color: #ffffff;
+    line-height: 30px;
+    margin-left: 20px;
+    /*text-align: center;*/
+    font-size: 0.12rem;
+}
+/*监督抽查*/
+.check-dailyinspection .c-data-box1 .cd-legend{
+    width: 100%;
+    height: 10%;
+}
+.check-dailyinspection .c-data-box1 .cd-legend .dw{
+    display: block;
+    font-size: 12px;
+    margin-left: 20px;
+    color: #fff;
+    float: left;
+}
+.check-dailyinspection .c-data-box1 .cd-legend .cd-legend1{
+    float: right;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.check-dailyinspection .c-data-box1 .cd-legend .cd-legend1 span{
+    display: block;
+    width: 12px;
+    height: 12px;
+    float: left;
+}
+.legendbg1{background-color: #1758e6}
+.legendbg2{background-color: #0de497}
+.check-dailyinspection .c-data-box1 .cd-legend .cd-legend1 p{
+    float:left;
+    line-height: 12px;
+    color: #fff;
+}
+.check-dailyinspection .c-data-box1 .data-t{
+    width: 100%;
+    height: 40%;
+}
+.check-dailyinspection .c-data-box1 .data-b{
+    width: 100%;
+    height:60%;
+}
+.check-dailyinspection .c-data-box1 .data-t .check-dailyinspection-box{
+    width: 25%;
+    height: 100%;
+
+    float: left;
+}
+.check-dailyinspection .c-data-box1 .data-t .check-dailyinspection-box .check-dailyinspection-se{
+    width: 100%;
+    height: 70%;
+    float: left;
+}
+.check-dailyinspection .c-data-box1 .data-t .check-dailyinspection-box .check-dailyinspection-title{
+    width: 100%;
+    height: 30%;
+    color: #fff;
+    float: left;
+    font-size: 0.12rem;
+    text-align: center;
+}
+
+/*地图部分*/
+.produce-map .produce-map-l{
+    width:70%;
+    height: 90%;
+
+    float: left;
+}
+.produce-map .produce-map-r{
+    width:30%;
+    height: 90%;
+
+    float: left;
+}
+.produce-map .produce-map-r h3{
+    font-size: 18px;
+    color: #ede286;
+    margin-top: 50px;
+}
+.produce-map .produce-map-r .number{
+    width: 100%;
+    height: 40px;
+    background-color: chocolate;
+}
+.produce-map .produce-map-r .select{
+    width: 100%;
+    height: 40px;
+    background-color: aquamarine;
+}
+.produce-map .produce-map-r .select select{width: 100%;height: 30px}

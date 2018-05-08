@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="index.js" ></script>
+    <script type="text/javascript" src="../js/echarts.js" ></script>
+    <script type="text/javascript" src="../js/guizhou.js" ></script>
+</head>
+<body>
+<div class="container">
+    <div class="nav g-flex">
+        <div class="nav-l">
+            <ul id="tab-list" class="g-flex">
+                <li class="active">·食品生产</li>
+                <li class="border">·食品流通</li>
+                <li class="border">·餐饮服务</li>
+            </ul>
+        </div>
+        <div class="nav-m g-flex g-flexcenter">
+            <img id="title1" src="../images/title-sc.png">
+        </div>
+        <div class="nav-r">
+                <div id="time">
+                    <p id="date"></p>
+                    <p id="week"></p>
+                </div>
+        </div>
+    </div>
+    <div class="main loadShoeSection" id="main1">
+        <div class="produce g-flex g-flexbetween">
+            <div class="produce-hostnumber layout-color">
+                <div class="data-title layout-title-bg"></div>
+                <div class="data-box" id="produce-hostnumber"></div>
+            </div>
+            <div class="produce-map map-title-bg">
+                <div class="data-title">全省企业分布</div>
+                <div class="produce-map-l" id="sc-map"></div>
+                <div class="produce-map-r">
+                    <h3>食品生产企业总数</h3>
+                    <div class="number">
+
+                    </div>
+                    <div class="select">
+                         <select></select>
+                    </div>
+                </div>
+            </div>
+            <div class="produce-certnumber layout-title-bg">
+                <div class="data-title">全省食品生产许可证办理情况</div>
+                <div class="data-title">各类办件占比（2016年第一季度）<br>案件总数：1000</div>
+                <div class="c-data-box1" id="produce-certnumber" style="margin-top: 30px">
+
+                </div>
+            </div>
+        </div>
+        <div class="g-flex g-flexbetween">
+            <div class="check-dailyno">
+                <div class="data-title layout-title-bg"></div>
+                <div class="data-box" id="check-dailyno"></div>
+            </div>
+            <div class="check-dailycompany layout-title-bg">
+                <div class="data-title"></div>
+                <div class="data-box" id="check-dailycompany"></div>
+            </div>
+            <div class="check-dailyinspection layout-title-bg">
+                <div class="data-title">食品监督抽检</div>
+                <div class="c-data-box1">
+                    <div class="cd-legend">
+                        <p class="dw">单位：合格率</p>
+                        <div class="cd-legend1">
+                            <span class="legendbg1"></span>
+                            <p>合格</p>
+                        </div>
+                        <div class="cd-legend1">
+                            <span class="legendbg2"></span>
+                            <p>不合格</p>
+                        </div>
+                    </div>
+                    <div class="data-t" >
+                        <div class="check-dailyinspection-box">
+                            <div class="check-dailyinspection-se" id="ScSpccS1"></div>
+                            <div class="check-dailyinspection-title">2016年第1季度</div>
+                        </div>
+                        <div class="check-dailyinspection-box">
+                            <div class="check-dailyinspection-se" id="ScSpccS2"></div>
+                            <div class="check-dailyinspection-title">2016年第2季度</div>
+                        </div>
+                        <div class="check-dailyinspection-box">
+                            <div class="check-dailyinspection-se" id="ScSpccS3"></div>
+                            <div class="check-dailyinspection-title">2016年第3季度</div>
+                        </div>
+                        <div class="check-dailyinspection-box">
+                            <div class="check-dailyinspection-se" id="ScSpccS4"></div>
+                            <div class="check-dailyinspection-title">2016年第4季度</div>
+                        </div>
+                    </div>
+                    <div class="data-b" id="ScSpcc">
+
+                    </div>
+                </div>
+            </div>
+            <div class="check-origion layout-title-bg">
+                <div class="data-title">案件来源分析</div>
+                <div class="data-title">案件总数：1000</div>
+                <div class="c-data-box1" id="check-origion">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--生产环节结束-->
+
+    <!--流通环节-->
+    <div class="main" id="main2" >
+        <div class="produce g-flex g-flexbetween">
+            <div class="produce-hostnumber layout-color">
+                <div class="data-title layout-title-bg"></div>
+                <div class="data-box" id="lt-produce-hostnumber"></div>
+            </div>
+            <div class="produce-map map-title-bg"></div>
+            <div class="produce-certnumber layout-title-bg">
+                <div class="data-title">全省食品经营许可证办理情况</div>
+                <div class="data-title">各类办件占比（2016年第一季度）<br>案件总数：1000</div>
+                <div class="c-data-box1" id="lt-produce-certnumber" style="margin-top: 30px">
+
+                </div>
+            </div>
+        </div>
+        <div class="g-flex g-flexbetween">
+            <div class="check-dailyno">
+                <div class="data-title layout-title-bg"></div>
+                <div class="data-box" id="lt-check-dailyno"></div>
+            </div>
+            <div class="check-dailycompany layout-title-bg">
+                <div class="data-title"></div>
+                <div class="data-box" id="lt-check-dailycompany"></div>
+            </div>
+            <div class="check-dailyinspection layout-title-bg">
+                <div class="data-title">食品监督抽检</div>
+                <div class="c-data-box1">
+                    <div class="cd-legend">
+                        <p class="dw">单位：合格率</p>
+                        <div class="cd-legend1">
+                            <span class="legendbg1"></span>
+                            <p>合格</p>
+                        </div>
+                        <div class="cd-legend1">
+                            <span class="legendbg2"></span>
+                            <p>不合格</p>
+                        </div>
+                    </div>
+                    <div class="data-t" >
+                        <div class="check-dailyinspection-box">
+                            <div class="check-dailyinspection-se" id="LtSpccS1"></div>
+                            <div class="check-dailyinspection-title">2016年第1季度</div>
+                        </div>
+                        <div class="check-dailyinspection-box">
+                            <div class="check-dailyinspection-se" id="LtSpccS2"></div>
+                            <div class="check-dailyinspection-title">2016年第2季度</div>
+                        </div>
+                        <div class="check-dailyinspection-box">
+                            <div class="check-dailyinspection-se" id="LtSpccS3"></div>
+                            <div class="check-dailyinspection-title">2016年第3季度</div>
+                        </div>
+                        <div class="check-dailyinspection-box">
+                            <div class="check-dailyinspection-se" id="LtSpccS4"></div>
+                            <div class="check-dailyinspection-title">2016年第4季度</div>
+                        </div>
+                    </div>
+                    <div class="data-b" id="LtSpcc">
+
+                    </div>
+                </div>
+            </div>
+            <div class="check-origion layout-title-bg">
+                <div class="data-title">案件来源分析</div>
+                <div class="data-title">案件总数：1000</div>
+                <div class="c-data-box1" id="lt-check-origion">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--流通环节结束-->
+
+    <!--餐饮环节-->
+    <div class="main" id="main3">
+        <div class="produce g-flex g-flexbetween">
+            <div class="produce-hostnumber layout-color">
+                <div class="data-title layout-title-bg"></div>
+                <div class="data-box" id="cy-produce-hostnumber"></div>
+            </div>
+            <div class="produce-map map-title-bg"></div>
+            <div class="produce-certnumber layout-title-bg">
+                <div class="data-title">全省食品经营许可证办理情况</div>
+                <div class="data-title">各类办件占比（2016年第一季度）<br>案件总数：1000</div>
+                <div class="c-data-box1" id="cy-produce-certnumber" style="margin-top: 30px">
+
+                </div>
+            </div>
+        </div>
+        <div class="g-flex g-flexbetween">
+            <div class="check-dailyno">
+                <div class="data-title layout-title-bg"></div>
+                <div class="data-box" id="cy-check-dailyno"></div>
+            </div>
+            <div class="check-dailycompany layout-title-bg">
+                <div class="data-title"></div>
+                <div class="data-box" id="cy-check-dailycompany"></div>
+            </div>
+            <div class="check-dailyinspection layout-title-bg">
+                <div class="data-title">食品监督抽检</div>
+                <div class="c-data-box1">
+                    <div class="cd-legend">
+                        <p class="dw">单位：合格率</p>
+                        <div class="cd-legend1">
+                            <span class="legendbg1"></span>
+                            <p>合格</p>
+                        </div>
+                        <div class="cd-legend1">
+                            <span class="legendbg2"></span>
+                            <p>不合格</p>
+                        </div>
+                    </div>
+                    <div class="data-t" >
+                        <div class="check-dailyinspection-box">
+                            <div class="check-dailyinspection-se" id="CySpccS1"></div>
+                            <div class="check-dailyinspection-title">2016年第1季度</div>
+                        </div>
+                        <div class="check-dailyinspection-box">
+                            <div class="check-dailyinspection-se" id="CySpccS2"></div>
+                            <div class="check-dailyinspection-title">2016年第2季度</div>
+                        </div>
+                        <div class="check-dailyinspection-box">
+                            <div class="check-dailyinspection-se" id="CySpccS3"></div>
+                            <div class="check-dailyinspection-title">2016年第3季度</div>
+                        </div>
+                        <div class="check-dailyinspection-box">
+                            <div class="check-dailyinspection-se" id="CySpccS4"></div>
+                            <div class="check-dailyinspection-title">2016年第4季度</div>
+                        </div>
+                    </div>
+                    <div class="data-b" id="CySpcc">
+
+                    </div>
+                </div>
+            </div>
+            <div class="check-origion layout-title-bg">
+                <div class="data-title">案件来源分析</div>
+                <div class="data-title">案件总数：1000</div>
+                <div class="c-data-box1" id="cy-check-origion">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--餐饮环节结束-->
+</div>
+<script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script>
+// 路径配置
+require.config({
+    paths: {
+        echarts: 'http://echarts.baidu.com/build/dist'
+    }
+});
+
+// 使用
+require(
+    [
+        'echarts',
+        'echarts/chart/bar',
+        'echarts/chart/line',
+        'echarts/chart/pie',
+        'echarts/chart/gauge',
+    ],
+
+    drawEcharts
+);
+</script>
+
+</body>
+</html>

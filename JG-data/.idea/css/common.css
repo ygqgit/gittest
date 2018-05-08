@@ -1,0 +1,66 @@
+/*   设置1rem，自适应,设计图尺寸为1920* h   */
+html{
+    font-size:calc(100vw/1920*100);
+}
+/*重置样式*/
+body,p,h1,h2,h3,h4,h5,h6,hr,ol,ul,li{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    margin:0;
+}
+/*flex布局*/
+.g-flex{
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:-o-flex;
+    display:flex;
+}
+/*水平方向自动左右分布*/
+.g-flexbetween{
+    -webkit-justify-content: space-between;
+    -moz-justify-content:space-between;
+    -o-justify-content:space-between;
+    justify-content: space-between;
+}
+/*水平方向居中分布*/
+.g-flexcenter{
+    -webkit-justify-content: center;
+    -moz-justify-content:center;
+    -o-justify-content:center;
+    justify-content: center;
+}
+/*垂直方向居中分布*/
+.g-flexaligncenter{
+    -webkit-align-items: center;
+    -moz-align-items:center;
+    -o-align-items:center;
+    align-items: center;
+}
+/*颜色*/
+
+.layout-title-bg{
+    width:100%;
+    height:30px;
+    background: url("../images/layout-title-bg.png") no-repeat center 0;
+}
+.map-title-bg{
+
+    background: url("../images/layout-title-bg.png")  no-repeat center 0;
+}
+/**/
+.data-title{
+    width: 100%;
+    height: 0.3rem;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+.c-data-box1{
+    width: 100%;
+    /*height:4rem;*/
+    height:80%;
+}
